@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans"><!--兼容性写法 简体中文普通话页面-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="renderer" content="webkit"><!--优先使用chrome内核渲染页面-->
+    <meta http-equiv="x-ua-compatible" content="ie=edge"><!--在桌面开发的时候可以让IE浏览器以最新的模式渲染页面-->
+    <meta name="renderer" content="webkit"><!--设置 360 浏览器渲染模式：webkit 为极速内核，ie-comp 为 IE 兼容内核，ie-stand 为 IE 标准内核。-->
+    <meta http-equiv = "X-UA-Compatible" content ="IE=edge,chrome=1" /><!--如果安装了 Google Chrome Frame，则使用 GCF 来渲染页面，如果没有安装 GCF，则使用最高版本的 IE 内核进行渲染。-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/><!--移动开发-->
+    <title>王午阳的网站首页</title><!--对SEO极其重要 谷歌上最多70个字符-->
+    <!-- 允许控制资源的过度加载 -->
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self'">--><!-- 尽早地放置在文档中 --><!-- 仅应用于该标签下的内容 -->
+    <meta name="application-name" content="王午阳的网站">  <!-- Web 应用的名称（仅当网站被用作为一个应用时才使用）-->
+    <!--all:文件将被检索，且链接可以被查询；none:与all相反； index:文件可以被检索，noindex:反之；follow:页面上的链接可以被查询；nofollow:反之；-->
+    <meta name="robots" content="index,follow"><!--告诉搜索引擎不要获取网页，并阻止其进入链接（可提升SEO） robots：所有搜索引擎-->
+    <meta name="google" content="notranslate"><!--禁止谷歌浏览器弹出是否翻译语言的弹窗-->
+    <!--<meta http-equiv="refresh" content="10;URL='http://wangwuyang.cn'">--><!--30s后跳到其他页面（不要后面的参数则是刷新效果）-->
+    <meta content="telephone=no" name="format-detection" /><!-- 忽略数字自动识别为电话号码 -->
+    <meta content="email=no" name="format-detection" /><!-- 忽略识别邮箱 -->
+    <meta name="HandheldFriendly" content="true"><!--貌似是针对不认识viewport的设备(苹果都成街机了，谁闲的没事用塞班看网页？)(，比如黑莓)-->
+    <meta name="MobileOptimized" content="320">   <!-- 微软的老式浏览器 -->
+    <meta name="screen-orientation" content="portrait">  <!-- uc强制竖屏 -->
+    <meta name="x5-orientation" content="portrait"> <!-- QQ强制竖屏 -->
+    <meta name="full-screen" content="yes">    <!-- UC强制全屏 -->
+    <meta name="x5-fullscreen" content="true">    <!-- QQ强制全屏 -->
+    <meta name="browsermode" content="application"><!-- UC应用模式 -->
+    <meta name="x5-page-mode" content="app"><!-- QQ应用模式 -->
+    <meta name="msapplication-tap-highlight" content="no"><!-- windows phone 点击无高光 -->
+    <!--通过手机百毒打开网页时，百毒可能会对你的网页进行转码，只展现页面内容，头底部会被替换并且一般会加点广告==尿性不改-->
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <!--苹果的设备可以说单成一家，有很多特定的设置，有兴趣的小伙伴可以到官方文档说明查看详细 https://developer.apple.com/develop/-->
+    <meta name="apple-mobile-web-app-capable" content="yes" /> <!--有个apple，这是苹果设备专用的，是否启用 WebApp 全屏模式；-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" /> <!-- 隐藏状态栏/设置状态栏颜色：：只有在开启WebApp全屏模式时才生效。content的值为default | black | black-translucent 。 -->
+    <meta name="apple-mobile-web-app-title" content="王午阳的网站">   <!-- 添加到主屏后的标题 -->
+    <meta name="Keywords" content="王午阳的个人网站"> <!--告诉浏览器网页内容，不过现在已经没用了-->
+    <meta name="description" content="王午阳,笔记,个人网站,前端笔记,总页面"><!--会被用在搜索引擎的结果页（可略微提升SEO）-->
+    <meta name="author" content="王午阳,1062534243@qq.com"> <!--作者-->
+    <link rel="icon" type="image/ico" href="wenjian/img/bt.jpg" /><!--网页ico图标设置-->
+    <meta name="subject" content="网站首页">    <!-- 关于你的网站主题的简短描述 -->
+
+    <!--<link rel="stylesheet" href="//at.alicdn.com/t/font_558428_479ognbyv079zfr.css">&lt;!&ndash;阿里巴巴矢量图库font-class版&ndash;&gt;-->
+    <!--<script async="async"  src="wenjian/Head_js.js"></script>-->
+    <!--动态生成函数 异步加载  html中对应的位置再调用JS函数-->
+    <!--如果页面解析到调用的位置 这里还没加载完 会怎么样？——————观察了下，目前偶尔会导致无法渲染上，推测是调用的时候 异步加载还未完成 还挺有点随机的意思-->
+    <!--<script defer="defer" src="wenjian/Head_js.js"></script>&lt;!&ndash;页面加载完成后再加载 + 调用函数 &ndash;&gt;-->
+   <!-- <script defer="defer" src="wenjian/LunBoTu.js" ></script><!--页面解析完毕后再读取+调用-->
+
+    <link rel = "stylesheet" href = "../public_file/element.css" />
+    <link rel = "stylesheet" href = "./wenjian/css.css" />
+    <link rel = "stylesheet" href = "../public_file/public.css" />
+
+    <style>
+       .g-fu{min-height: 3000px;}
+        /*g布局*/
+        .g-fu{font-size: 1.6rem;}
+       .g-tou{
+           background-color: white;/*颜色渐变兼容写法*/
+           background: -webkit-linear-gradient(left,#1F2D3D,#F9FAFC); /* Safari 5.1 - 6.0 */
+           background: -o-linear-gradient(right,#1F2D3D,#F9FAFC); /* Opera 11.1 - 12.0 */
+           background: -moz-linear-gradient(right,#1F2D3D,#F9FAFC); /* Firefox 3.6 - 15 */
+           background: linear-gradient(45deg,#1F2D3D,#F9FAFC); /* 标准的语法（必须放在最后）*/
+       }
+
+       .u-biaoTi {
+           font-weight: 700;
+           background: -webkit-linear-gradient(left,red,rgb(189, 186, 191),blue); /* Safari 5.1 - 6.0 */
+           background: -o-linear-gradient(right,red,rgb(189, 186, 191),blue); /* Opera 11.1 - 12.0 */
+           background: -moz-linear-gradient(right,red,rgb(189, 186, 191),blue); /* Firefox 3.6 - 15 */
+           background: linear-gradient(to right, red, #9c6081, yellow); /* 标准的语法（必须放在最后）*/
+           -webkit-background-clip: text;
+           color: transparent;
+       }
+
+       .g-main{display: flex;justify-content: center;flex-wrap:nowrap;}
+       .g-main_left{
+           width: 20%;padding: 20px 10px;
+           background-color: white;/*颜色渐变兼容写法*/
+           background: -webkit-linear-gradient(left,#1F2D3D,#F9FAFC); /* Safari 5.1 - 6.0 */
+           background: -o-linear-gradient(right,#1F2D3D,#F9FAFC); /* Opera 11.1 - 12.0 */
+           background: -moz-linear-gradient(right,#1F2D3D,#F9FAFC); /* Firefox 3.6 - 15 */
+           background: linear-gradient(45deg,#1F2D3D,#F9FAFC); /* 标准的语法（必须放在最后）*/
+       }
+       .g-main_center{
+           width:80%;
+           background-color: white;/*颜色渐变兼容写法*/
+           background: -webkit-linear-gradient(left,#9ed7cc,#F9FAFC); /* Safari 5.1 - 6.0 */
+           background: -o-linear-gradient(right,#9ed7cc,#F9FAFC); /* Opera 11.1 - 12.0 */
+           background: -moz-linear-gradient(right,#9ed7cc,#F9FAFC); /* Firefox 3.6 - 15 */
+           background: linear-gradient(45deg, #9ed7cc,#F9FAFC); /* 标准的语法（必须放在最后）*/
+       }
+       .g-main_right{}
+
+        /*元件——暗示(提示)元件*/
+        .u-hint{color:green;font-size: 1.2rem;padding: .4rem;}
+
+
+        li{padding: 10px;}
+        ol > li{margin: 0 10px;}
+    </style>
+    <script src = "../public_file/vue.js"></script><!--引入vue.js文件-->
+</head>
+<body>
+    <!--加载完成前的html和js代码--><!--用js或vue.js创建这段html 避免用户禁用js导致无法显示页面内容-->
+    <div id="JiaZaiBF" v-html="message"></div>
+
+<div class="g-fu" id="Fu">
+    <article class="g-tou"><div class="u-biaoTi">王午阳的网站首页</div></article>
+    <article class="g-main">
+        <section class="g-main_left">
+            <h3>前端相关</h3>
+            <ul>
+                <li><h4><a href="../xiangmus/jianLi/index.html">网上简历地址</a></h4></li>
+                <li>
+                    <h4>知识点总结</h4>
+                    <ol>
+                        <li><a href="../知识/webpack/基础教程.html">webpack基础教程+笔记（完成）</a></li>
+                        <li><a href="../知识/git/git笔记.html">git基础教程+笔记（完成）</a></li>
+                        <li><a href="../知识/vuejs/vue-cli教程.html">vue-cli脚手架安装教程（完成）</a></li>
+                        <li><a href="../知识/js/性能优化.html">js性能优化</a></li>
+                        <li><a href="../知识/js/个人库">个人js库</a></li>
+                        <li><a href="../知识/node.js/node.js教程.html">node.js教程（搁置状态）</a></li>
+                        <li><a href="../知识/css/index.html">css整理(搁置状态)</a></li>
+                        <li><a href="../知识/cmd/index.html">cmd命令</a></li>
+                        <li><a href="../知识/html/index.html">html的meta标签相关</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h4>个人项目总览</h4>
+                    <ol>
+                        <li><a href="../xiangmus/canvas时间动画/index.html">一个canvas动画</a></li>
+                        <li><a href="../xiangmus/时钟/index.html">一个跟表有关的小动画</a></li>
+                        <li><a href="../xiangmus/淘宝首页/index.html">刚学前端时仿的淘宝首页</a></li>
+                        <li><a href="../xiangmus/计算器">计算器（未完成）</a></li>
+                        <li><a href="../xiangmus/轮播图自适应宽度版">原生js的自适应宽度的轮播图</a></li>
+                    </ol>
+                </li>
+                <li>
+                    <h4>公司项目概览</h4>
+                    <ol>
+                        <li><a href="">ERP的塑料管理系统</a></li>
+                        <li><a href="">尾气监督系统</a></li>
+                        <li><a href="">OA人事系统</a></li>
+                        <li><a href="">CRM流转系统</a></li>
+                    </ol>
+                </li>
+            </ul>
+        </section>
+        <section class="g-main_center"></section>
+        <section class="g-main_right"></section>
+    </article>
+    <article class="g-wei"></article>
+</div>
+
+    <script src = "../public_file/element.js"></script>
+    <script>
+      let vueName2 = new Vue({
+        el: '#JiaZaiBF',
+        data: {message: '<div class="JiaZaiZhong" id="JZZ"><div></div></section>'}
+      });
+      let JiaZaiZhong = document.getElementById("JZZ");
+      document.onreadystatechange = function(){//监测加载状态
+        /*if(document.readyState=="loading"){    //如果为loading（加载的第二阶段 即正在加载）
+             JiaZaiZhong.style.display = "block";
+         }*/
+        if(document.readyState==="complete"){    //如果为complete（加载的第四阶段 即加载完成）
+          JiaZaiZhong.style.display = "none";
+        }
+      }
+    </script>
+    <!--加载完成后再显示内容 由于标签不是通过js创建 所以如果用户禁用js会导致看不到页面内容 不过还有别的思路 回头再弄-->
+    <script>
+        let vueName = new Vue({
+          el:"#Fu",
+          data:{
+
+          },
+          created(){
+            
+          },
+          methods(){
+
+          }
+        })
+    </script>
+</body>
+</html>
